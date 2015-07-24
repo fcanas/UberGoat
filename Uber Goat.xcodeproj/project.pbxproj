@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E76373821B62C26C00C46226 /* Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = E76373811B62C26C00C46226 /* Keys.m */; };
 		E7BB3E271B582E0300E7BA2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BB3E261B582E0300E7BA2F /* AppDelegate.swift */; };
 		E7BB3E291B582E0300E7BA2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BB3E281B582E0300E7BA2F /* ViewController.swift */; };
 		E7BB3E2C1B582E0300E7BA2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7BB3E2A1B582E0300E7BA2F /* Main.storyboard */; };
@@ -35,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E763737C1B62C21C00C46226 /* Uber Goat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Uber Goat-Bridging-Header.h"; sourceTree = "<group>"; };
+		E76373801B62C26C00C46226 /* Keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keys.h; sourceTree = "<group>"; };
+		E76373811B62C26C00C46226 /* Keys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keys.m; sourceTree = "<group>"; };
+		E76373831B62C2A100C46226 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		E7BB3E231B582E0300E7BA2F /* Uber Goat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uber Goat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BB3E261B582E0300E7BA2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7BB3E281B582E0300E7BA2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +112,10 @@
 				E7BB3E2D1B582E0300E7BA2F /* Assets.xcassets */,
 				E7BB3E2F1B582E0300E7BA2F /* LaunchScreen.storyboard */,
 				E7BB3E321B582E0300E7BA2F /* Info.plist */,
+				E763737C1B62C21C00C46226 /* Uber Goat-Bridging-Header.h */,
+				E76373801B62C26C00C46226 /* Keys.h */,
+				E76373811B62C26C00C46226 /* Keys.m */,
+				E76373831B62C2A100C46226 /* Config.xcconfig */,
 			);
 			path = "Uber Goat";
 			sourceTree = "<group>";
@@ -191,6 +200,7 @@
 		E7BB3E1B1B582E0300E7BA2F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Fabian Canas";
 				TargetAttributes = {
@@ -265,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7BB3E291B582E0300E7BA2F /* ViewController.swift in Sources */,
+				E76373821B62C26C00C46226 /* Keys.m in Sources */,
 				E7BB3E271B582E0300E7BA2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Uber Goat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fabiancanas.Uber-Goat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Uber Goat/Uber Goat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -418,10 +432,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Uber Goat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fabiancanas.Uber-Goat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Uber Goat/Uber Goat-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -492,6 +508,7 @@
 				E7BB3E4D1B582E0300E7BA2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7BB3E4E1B582E0300E7BA2F /* Build configuration list for PBXNativeTarget "Uber GoatTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +517,7 @@
 				E7BB3E501B582E0300E7BA2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7BB3E511B582E0300E7BA2F /* Build configuration list for PBXNativeTarget "Uber GoatUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +526,7 @@
 				E7BB3E531B582E0300E7BA2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
